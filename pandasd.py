@@ -20,8 +20,7 @@ for csv_file in csv_files:
     #final_df = result.groupby('region')
     final_df = result[collums]
 
-    final_df.to_csv(dest_file, index=False)
-
-
+    final_df.to_csv(dest_file, mode='a',index=False)
     print(final_df)
+
 #print(csv_files)
